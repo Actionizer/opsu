@@ -21,7 +21,7 @@ public class AppGameContainer extends GameContainer {
 		AppGameContainer.containerWidth = containerWidth;
 		AppGameContainer.containerHeight = containerHeight;
 
-		Gdx.graphics.setDisplayMode(containerWidth, containerHeight, b);
+		Gdx.graphics.setWindowedMode(containerWidth, containerHeight);
 		width = Gdx.graphics.getWidth();
 		height = Gdx.graphics.getHeight();
 	}
