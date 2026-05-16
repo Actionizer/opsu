@@ -155,8 +155,7 @@ public class GameContainer extends GUIContext{
 		
 	}
 	public void setDefaultMouseCursor() {
-		Gdx.graphics.setSystemCursor(Cursor.SystemCursor.Arrow);
-		
+		Gdx.input.setCursorCatched(false);
 	}
 	public void setMouseCursor(Cursor cursor, int x, int y) throws SlickException {
 		Gdx.graphics.setCursor(Gdx.graphics.newCursor(cursor.getPixmap(), x, y));
